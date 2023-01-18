@@ -1,0 +1,69 @@
+<html>
+<head>
+<style>
+body{
+background-color:darkcyan;
+}
+h1{
+color:white;
+text-align:center;
+}
+p{
+color:khaki;
+font-size:24px;
+}
+h2,h4{
+color:white;
+}
+</style>
+</head>
+<body>
+<hr>
+<h1> JAVASCRIPT MATH FUNCTIONS </h1>
+<hr>
+<h2><b>Some of the math functions are showcased below</b></h2>
+<h4>1. Absolute value is the distance between the number and zero: Eg, -24.34: </h4><p id="absfnt"></p>
+<h4>2. Ceil function returns the smallest integer that is greater than or equal to the number: Eg, 9.4:</h4><p id="ceilfnt"></p>
+<h4>3. Floor function rounds down and returns the largest integer less than or equal to a given number: Eg, 4.7:</h4><p id="floorfnt"></p>
+<h4>4. Round function rounds a number to a specified number of digits: Eg, 12.8974:</h4><p id="roundfnt"></p>
+<h4>5. Power function A power function is a function where y = x ^n where n is any real constant number: Eg, 3,2:</h4><p id="powerfnt"></p>
+<h4>6. Square root function is used to return the square root of a number: Eg, 64:</h4><p id="sqrtfnt"></p>
+<h4>7. Trunc returns the integer part of number: Eg, 6.12:</h4><p id="trunc"></p>
+<h4>7. Sign returns if the number is negative positive or null: Eg, -4:</h4><p id="sign"></p>
+<h4>Minimum Value: </h4><p id="minfnt"></p>
+<h4>Maximum Value: </h4><p id="maxfnt"></p>
+<script>
+document.getElementById("absfnt").innerHTML = Math.abs(-24.34); 
+document.getElementById("ceilfnt").innerHTML = Math.ceil(9.4);
+document.getElementById("floorfnt").innerHTML = Math.floor(4.7);
+document.getElementById("roundfnt").innerHTML = Math.round(12.8974);
+document.getElementById("powerfnt").innerHTML = Math.pow(3,2);
+document.getElementById("sqrtfnt").innerHTML = Math.sqrt(64);
+document.getElementById("trunc").innerHTML = Math.trunc(6.12);
+document.getElementById("sign").innerHTML = Math.sign(-4);
+document.getElementById("minfnt").innerHTML =
+Math.min(42, 86, 50, 27, 77, 19);
+document.getElementById("maxfnt").innerHTML =
+Math.max(51, 94, 57, 21, 72, 17);
+document.write("<h4> Math.PI gives the ratio of circumference of circle to its diameter : </h4><p>"+Math.PI+"</p>"); 
+document.write("<h4>Math.random to print random numbers</h4><p>"+Math.floor(Math.random()*10000)+"</p>");
+</script>
+<hr>
+<h1> JAVASCRIPT STRING FUNCTIONS</h1>
+<hr>
+<p id="p1">This is a Javascript file</p>
+<script>
+var str="My name is Sreerag"
+var str1="and I am a student"
+document.write("<h4>IndexOf 'a' in the string: </h4><p>"+str.indexOf("a")+"</p>")
+document.write("<h4>lastIndexOf 'name' in string: </h4><p>"+str.lastIndexOf("name")+"</p>")
+document.write("<h4>String slice : </h4><p>"+str.slice(1,7)+"</p>")
+document.write("<h4>String substr : </h4><p>"+str.substr(6)+"</p>")
+document.write("<h4>String replace : </h4><p>"+str.replace("Sreerag","Vishnu")+"</p>")
+document.write("<h4>String toUpperCase : </h4><p>"+str.toUpperCase()+"</p>")
+document.write("<h4>String toLowerCase : </h4><p>"+str.toLowerCase()+"</p>")
+document.write("<h4>String concat : </h4><p>"+str.concat(" ",str1)+"</p>")
+document.getElementById("p1").innerHTML="getelementbyid replaced This is a Javascript file here"
+</script>
+</body>
+</html>

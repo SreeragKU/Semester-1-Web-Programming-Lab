@@ -1,0 +1,18 @@
+<html>
+<head>
+<style>
+h1{
+margin:300
+}
+</style>
+<body id="colour">
+<input type="Button" onclick="color()" value="Click to change background color">
+<h1>Welcome to my Website</h1>
+<script>
+function color(){
+            a1="#" + ((1<<24)*Math.random() | 0).toString(16);
+            document.getElementById("colour").style.backgroundColor=a1;
+        }
+</script>
+</body>
+</html>

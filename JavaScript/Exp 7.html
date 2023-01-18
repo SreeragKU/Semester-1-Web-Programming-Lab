@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online exam</title>
+</head>
+<body>
+ <u><h1 style="text-align: center;">ONLINE EXAM </h1> </u>
+ <div style="margin: 100px;">
+  <h3  style="font-size: 25px;">1)How is an array initialized in C language?</h3>
+  <input type="radio" name="q1" id="a">int a[3]={1,2,3};<br>
+  <input type="radio" name="q1">int a={1,2,3};<br>
+  <input type="radio" name="q1">int a[]=new int[3]<br>
+  <input type="radio" name="q1">int a(3)=[1,2,3]<br>
+  <h3 style="font-size: 25px;">2)Which of the following is a linear data structure?</h3>
+  <input type="radio" name="q2" id="b">Array<br>
+  <input type="radio" name="q2">AVL Trees<br>
+  <input type="radio" name="q2">Binary Trees<br>
+  <input type="radio" name="q2">Graphs<br>
+  <h3 style="font-size: 25px;">3)How is the 2nd element in an array accessed based on pointer notation?</h3>
+  <input type="radio" name="q3">*a+2<br>
+  <input type="radio" name="q3" id="c">*(a+2)<br>
+  <input type="radio" name="q3">*(*a+2)<br>
+  <input type="radio" name="q3">&(a+2)<br>
+  <h3 style="font-size: 25px;">4)Which of the following is not the type of queue?</h3>
+  <input type="radio" name="q4">Priority queue<br>
+  <input type="radio" name="q4" id="d">Single-ended queue<br>
+  <input type="radio" name="q4">Circular queuer<br>
+  <input type="radio" name="q4">Ordinary queue<br>
+  <h3 style="font-size: 25px;">5)From following which is not the operation of data structure?</h3>
+  <input type="radio" name="q5" id="e">Operations that manipulate data in some way<br>
+  <input type="radio" name="q5">Operations that perfrom a computation<br>
+  <input type="radio" name="q5">Operation that check for syntax errors<br>
+  <input type="radio" name="q5">Operations that monitot an object for the occurrence of a controlling event<br>
+  <h3 style="font-size: 25px;">6)How are Strings represented in memory in C?</h3>
+  <input type="radio" name="q6" id="f">AN array of characters<br>
+  <input type="radio" name="q6">The object of some class<br>
+  <input type="radio" name="q6">Same as other primitive data types<br>
+  <input type="radio" name="q6">LinkedList of characters<br><br>
+  <input type="button" value="submit" onclick="result()">
+</div>
+<script>
+    function result(){
+        var score=0;
+        if(document.getElementById("a").checked){
+            score++;
+          }
+        if(document.getElementById("b").checked){
+               score++;
+           } 
+        if(document.getElementById("c").checked){
+               score++;
+           }   
+        if(document.getElementById("d").checked){
+             score++;
+          }  
+        if(document.getElementById("e").checked){
+               score++;
+           }  
+        if(document.getElementById("f").checked){
+                score++;
+            } 
+        document.write("SCORE=",score);  
+          }
+</script>
+</body> 
+</html>

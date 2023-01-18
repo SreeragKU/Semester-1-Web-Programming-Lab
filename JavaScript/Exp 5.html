@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Mouseover</title>
+</head>
+<body>
+<h1 id="t1">Nature</h1>
+<img id="m1" src="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=600" height="600px" width="600px">
+<script>
+function imgchange1()
+{
+document.getElementById("m1").src="https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=600"
+}
+function imgchange2()
+{
+document.getElementById("m1").src="https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&w=600"
+}
+document.getElementById("m1").addEventListener("mouseover",imgchange1)
+document.getElementById("m1").addEventListener("mouseout",imgchange2)
+</script>
+</p>
+<script>
+function txtchange1()
+{
+document.getElementById("t1").innerHTML="City"
+}
+function txtchange2()
+{
+document.getElementById("t1").innerHTML="Nature"
+}
+document.getElementById("t1").addEventListener("mouseover",txtchange1)
+document.getElementById("t1").addEventListener("mouseout",txtchange2)
+</script>
+</body>
+</head>
+</html>

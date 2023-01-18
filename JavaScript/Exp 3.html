@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Simple Calculator</title>
+<style>
+body{
+margin:200px 600px;
+}
+</style>
+</head>
+<body>
+<table border="2">
+<tr><th colspan="2"><center>Calculator</center></th><tr>
+<tr><td>Result: </td><td><center><h3 id="h3"></h3></center></td></tr>
+<tr><td>Number 1: </td><td><center><input type="textbox" id="Num1"></input></center></td></tr>
+<tr><td>Number 2: </td><td><center><input type="textbox" id="Num2"></input></center></td></tr>
+<tr><td><button id="b1">Sum</button></td><td><button id="b2">Difference</button></td></tr>
+<tr><td><button id="b3">Product</button></td><td><button id="b4">Quotient</button></td></tr>
+<tr><td><button id="b5">Remainder</button></td><td><button id="b6">Clear</button></td></tr>
+<script>
+function add(){
+var num1=parseInt(document.getElementById("Num1").value)
+var num2=parseInt(document.getElementById("Num2").value)
+var sum=num1+num2
+document.getElementById("h3").innerHTML=sum
+}
+function sub(){
+var num1=parseInt(document.getElementById("Num1").value)
+var num2=parseInt(document.getElementById("Num2").value)
+var diff=num1-num2
+document.getElementById("h3").innerHTML=diff
+}
+function mul(){
+var num1=parseInt(document.getElementById("Num1").value)
+var num2=parseInt(document.getElementById("Num2").value)
+var pro=num1*num2
+document.getElementById("h3").innerHTML=pro
+}
+function Quotient(){
+var num1=parseInt(document.getElementById("Num1").value)
+var num2=parseInt(document.getElementById("Num2").value)
+var quo=num1/num2
+document.getElementById("h3").innerHTML=quo
+}
+function Remainder(){
+var num1=parseInt(document.getElementById("Num1").value)
+var num2=parseInt(document.getElementById("Num2").value)
+var rem=num1%num2
+document.getElementById("h3").innerHTML=rem
+}
+function Clear(){
+document.getElementById("h3").innerHTML=""
+}
+document.getElementById("b1").addEventListener("click",add)
+document.getElementById("b2").addEventListener("click",sub)
+document.getElementById("b3").addEventListener("click",mul)
+document.getElementById("b4").addEventListener("click",Quotient)
+document.getElementById("b5").addEventListener("click",Remainder)
+document.getElementById("b6").addEventListener("click",Clear)
+</script>
+</body>
+</html>
